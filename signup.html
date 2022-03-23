@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Attendance System</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <script src="js/preloader.js" defer></script>
+    <script src="js/fireBase.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- preloader start-->
+    <div class="preloader">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end-->
+    <div class="wrapper">
+        <div class="logo">
+            <a href="homepage.html">
+                <a href="homepage.html">
+                    <img src="assets/a2.png" alt="QA"></a>
+        </div>
+        <label> Welcome to Quick Attendance <br> System</label>
+        <header>Please, Signup Here!</header>
+        <form id="signupForm" action="#" onsubmit="register();return false">
+            <!-- action="#" method="get" -->
+
+
+            <div class="field text">
+                <div class="input-area">
+                    <input type="text" id="full_name" name="text" placeholder="Full name" />
+                    <i class="icon fas fa-user"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+
+
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" id="email" name="email" placeholder="Email Address" />
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+
+
+                <div class="error error-txt">Email can't be blank</div>
+            </div>
+
+
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" id="password" name="password" placeholder="Password" />
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+
+
+                <div class="error error-txt">Please Enter Your Password</div>
+            </div>
+
+
+            <div class="pass-txt">
+                <a href="forgotpassword.html">Forgot password?</a>
+            </div>
+
+
+            <input type="submit" id="submitBtn" value="Signup" />
+        </form>
+        <div class="login-txt">
+            Already have an account? <a href="index.html">Login Now</a>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+</body>
+
+</html>

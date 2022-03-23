@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/student-nav-bar.css" />
+    <link rel="stylesheet" href="css/report.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <script src="js/preloader.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+
+<body>
+    <!-- preloader start-->
+    <div class="preloader">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end-->
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search" />
+            <input type="checkbox" id="show-menu" />
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i
+                ></label>
+            <div class="content">
+                <!-- <img src="assets/a2.png" alt="logo" width="50" height="100"> -->
+                <div class="logo">
+                    <a href="homepage.html"> Quick Attendance</a>
+                </div>
+                <ul class="links">
+                    <li><a href="homepage.html">Dashboard</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="management.html">Management </a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i
+                ></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required />
+                <button type="submit" class="go-icon">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+            </form>
+        </nav>
+    </div>
+</body>
+
+<!-- 
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+            </div>
+            <div class="text">HTML & CSS</div>
+        </div>
+        <div class="card js">
+            <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+            </div>
+            <div class="text">JavaScript</div>
+        </div>
+        <div class="card react">
+            <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+            </div>
+            <div class="text">React JS</div>
+        </div>
+    </div>
+
+    <script>
+        let options = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.85,
+            fill: {
+                gradient: ['black', 'red']
+            }
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+            function(event, progress, stepValue) {
+                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $(".js .bar").circleProgress({
+            value: 0.70
+        });
+        $(".react .bar").circleProgress({
+            value: 0.60
+        });
+    </script>
+
+</body> -->
+
+</html>
