@@ -22,12 +22,12 @@ function register() {
     full_name = document.getElementById('full_name').value
         // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Enter your email & Password !')
+        alert('Email or Password is Outta Line!!')
         return
         // Don't continue running the code
     }
     if (validate_field(full_name) == false) {
-        alert('Enter your name !')
+        alert('One or More Extra Fields is Outta Line!!')
         return
     }
 
@@ -52,7 +52,7 @@ function register() {
 
             // Done
             alert('User Created!!')
-            location.href = window.location.origin + '/index.html'
+            location.href = window.location.origin + '/login.html'
         })
         .catch(function(error) {
             // Firebase will use this to alert of its errors
@@ -72,15 +72,14 @@ function login() {
 
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Enter your email & Password !')
+        alert('Email or Password is Outta Line!!')
         return
         // Don't continue running the code
     }
 
     auth.signInWithEmailAndPassword(email, password)
         .then(function() {
-            // Declare
-            user variable
+            // Declare user variable
             var user = auth.currentUser
 
             // Add this user to Firebase Database
@@ -96,7 +95,7 @@ function login() {
 
             // Done
             alert('Logged In !')
-            location.href = window.location.origin + 'qas/homepage.html'
+            location.href = window.location.origin + '/index.html'
 
         })
         .catch(function(error) {
@@ -107,6 +106,8 @@ function login() {
             alert(error_message)
         })
 }
+
+
 
 
 // Validate Functions

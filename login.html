@@ -31,56 +31,34 @@
                 <img src="assets/a2.png" alt="QA"></a>
         </div>
         <label> Welcome to Quick Attendance <br> System</label>
-        <header>Please, Signup Here!</header>
-        <form id="signupForm" action="#" onsubmit="register();return false">
-            <!-- action="#" method="get" -->
-
-
-            <div class="field text">
-                <div class="input-area">
-                    <input type="text" id="full_name" name="text" placeholder="Full name" />
-                    <i class="icon fas fa-user"></i>
-                    <i class="error error-icon fas fa-exclamation-circle"></i>
-                </div>
-            </div>
-
-
+        <header>Please, Login Here!</header>
+        <form id="loginForm" onsubmit="login();return false" , action="#">
+            <!-- action="/index.html" method="get" -->
             <div class="field email">
                 <div class="input-area">
                     <input type="email" id="email" name="email" placeholder="Email Address" />
                     <i class="icon fas fa-envelope"></i>
                     <i class="error error-icon fas fa-exclamation-circle"></i>
                 </div>
-
-
                 <div class="error error-txt">Email can't be blank</div>
             </div>
-
-
             <div class="field password">
                 <div class="input-area">
                     <input type="password" id="password" name="password" placeholder="Password" />
                     <i class="icon fas fa-lock"></i>
                     <i class="error error-icon fas fa-exclamation-circle"></i>
                 </div>
-
-
-                <div class="error error-txt">Please Enter Your Password</div>
+                <div class="error error-txt">Password can't be blank</div>
             </div>
-
-
             <div class="pass-txt">
                 <a href="forgotpassword.html">Forgot password?</a>
             </div>
-
-
-            <input type="submit" id="submitBtn" value="Signup" />
+            <input type="submit" id="submitBtn" value="Login" />
         </form>
-        <div class="login-txt">
-            Already have an account? <a href="login.html">Login Now</a>
+        <div class="sign-txt">
+            New to quick attendance? <a href="signup.html">Signup now</a>
         </div>
     </div>
-
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
