@@ -95,7 +95,7 @@ function login() {
 
             // Done
             alert('Logged In !')
-            location.href = window.location.origin + '/homepage.html'
+            location.href = window.location.origin + './homepage.html'
 
         })
         .catch(function(error) {

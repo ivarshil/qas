@@ -5,7 +5,7 @@ var mainApp = {};
     var logtout = function() {
         firebase.auth().signOut().then(function() {
             console.log('success');
-            window.location.replace("login.html");
+            window.location.replace("index.html");
         }, function() {})
     }
 
@@ -19,7 +19,7 @@ var mainApp = {};
                 // No user is signed in.
                 mainContainer.style.display = "none";
                 console.log("redirect");
-                window.location.replace("login.html");
+                window.location.replace("index.html");
             }
         });
     }
