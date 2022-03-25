@@ -52,7 +52,7 @@ function register() {
 
             // Done
             alert('User Created!!')
-            location.href = window.location.origin + '/login.html'
+            location.href = window.location.origin + '/index.html'
         })
         .catch(function(error) {
             // Firebase will use this to alert of its errors
@@ -95,7 +95,7 @@ function login() {
 
             // Done
             alert('Logged In !')
-            location.href = window.location.origin + '/index.html'
+            location.href = window.location.origin + '/homepage.html'
 
         })
         .catch(function(error) {

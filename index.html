@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Attendance System</title>
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="js/preloader.js" defer></script>
+    <script src="js/fireBase.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -22,32 +24,44 @@
         </div>
     </div>
     <!-- preloader end-->
-
     <div class="wrapper">
-        <nav>
-            <input type="checkbox" id="show-search" />
-            <input type="checkbox" id="show-menu" />
-            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-            <div class="content">
-                <div class="logo">
-                    <a href="index.html"> Quick Attendance</a>
+        <div class="logo">
+            <a href="homepage.html">
+                <img src="assets/a2.png" alt="QA"></a>
+        </div>
+        <label> Welcome to Quick Attendance <br> System</label>
+        <header>Please, Login Here!</header>
+        <form id="loginForm" onsubmit="login();return false" ,action="qas/homepage.html" method="get">
+            <!--  -->
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" id="email" name="email" placeholder="Email Address" />
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
                 </div>
-                <ul class="links">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="report.html">Report</a></li>
-                    <li><a href="management.html">Management </a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
+                <div class="error error-txt">Email can't be blank</div>
             </div>
-            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-            <form action="#" class="search-box">
-                <input type="text" placeholder="Type Something to Search..." required />
-                <button type="submit" class="go-icon">
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                </button>
-            </form>
-        </nav>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" id="password" name="password" placeholder="Password" />
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Password can't be blank</div>
+            </div>
+            <div class="pass-txt">
+                <a href="forgotpassword.html">Forgot password?</a>
+            </div>
+            <input type="submit" id="submitBtn" value="Login" />
+        </form>
+        <div class="sign-txt">
+            New to quick attendance? <a href="signup.html">Signup now</a>
+        </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
 </body>
 
 </html>
