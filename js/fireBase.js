@@ -22,12 +22,12 @@ function register() {
     full_name = document.getElementById('full_name').value
         // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Email or Password is Outta Line!!')
+        alert('Enter your email & Password !')
         return
         // Don't continue running the code
     }
     if (validate_field(full_name) == false) {
-        alert('One or More Extra Fields is Outta Line!!')
+        alert('Enter your name !')
         return
     }
 
@@ -72,7 +72,7 @@ function login() {
 
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Email or Password is Outta Line!!')
+        alert('Enter your email & Password !')
         return
         // Don't continue running the code
     }
@@ -95,7 +95,7 @@ function login() {
 
             // Done
             alert('Logged In !')
-            location.href = window.location.origin + './homepage.html'
+            location.href = window.location.origin + '/homepage.html'
 
         })
         .catch(function(error) {
@@ -106,8 +106,6 @@ function login() {
             alert(error_message)
         })
 }
-
-
 
 
 // Validate Functions
