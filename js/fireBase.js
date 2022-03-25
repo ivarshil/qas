@@ -79,7 +79,8 @@ function login() {
 
     auth.signInWithEmailAndPassword(email, password)
         .then(function() {
-            // Declare user variable
+            // Declare
+            user variable
             var user = auth.currentUser
 
             // Add this user to Firebase Database
@@ -95,7 +96,7 @@ function login() {
 
             // Done
             alert('Logged In !')
-            location.href = window.location.origin + '/homepage.html'
+            location.href = window.location.origin + 'qas/homepage.html'
 
         })
         .catch(function(error) {
