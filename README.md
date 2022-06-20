@@ -9,3 +9,13 @@
  - Elaboration at maximization is essential here at the stage while identifying activities, these results in Comprehensiveness. Talking about the users it is important to keep in mind the feelings of each of them. It was rather easy for us to collect all the data that we could work on.
  - There are always several thoughts going on while we start searching for problems in the open world environment but knowing our area of interest is the key.
 
+
+<html>
+<body>
+ <div>
+  <img src="https://user-images.githubusercontent.com/70795331/174566218-76c5e8c1-a1ab-48b8-91c3-a46dca84c9d7.png" alt="Login Page" width="230"  display=inline align=left list-style-type=none>
+  <img src="https://user-images.githubusercontent.com/70795331/174564584-48f8050a-6b7f-4ae7-974d-139e6f000d5c.png" alt="Signup Page" width="210"   display=inline align=center list-style-type=none>
+   <img src="https://user-images.githubusercontent.com/70795331/174567052-614dcad8-d5b7-4bb0-b7af-f1dadfc8a511.png" alt="DashBoard" width="500"  display=inline align=right list-style-type=none>
+ </div>
+</body>
+</html>
