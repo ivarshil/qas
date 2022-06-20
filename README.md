@@ -12,10 +12,10 @@
 
 <html>
 <body>
- <div>
-  <img src="https://user-images.githubusercontent.com/70795331/174566218-76c5e8c1-a1ab-48b8-91c3-a46dca84c9d7.png" alt="Login Page" width="230"  display=inline align=left list-style-type=none>
-  <img src="https://user-images.githubusercontent.com/70795331/174564584-48f8050a-6b7f-4ae7-974d-139e6f000d5c.png" alt="Signup Page" width="210"   display=inline align=center list-style-type=none>
-   <img src="https://user-images.githubusercontent.com/70795331/174567052-614dcad8-d5b7-4bb0-b7af-f1dadfc8a511.png" alt="DashBoard" width="450"  display=inline align=right list-style-type=none>
+ <div align="left">
+  <img src="https://user-images.githubusercontent.com/70795331/174566218-76c5e8c1-a1ab-48b8-91c3-a46dca84c9d7.png" alt="Login Page" width="250px" max-width="50%">
+  <img src="https://user-images.githubusercontent.com/70795331/174564584-48f8050a-6b7f-4ae7-974d-139e6f000d5c.png" alt="Signup Page" width="230px" max-width="50%">
+  <img src="https://user-images.githubusercontent.com/70795331/174567052-614dcad8-d5b7-4bb0-b7af-f1dadfc8a511.png" alt="DashBoard" width="500px" top-margin="100px" max-width="100%">
  </div>
 </body>
 </html>
